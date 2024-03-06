@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>fs_pia_excel</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>PIA\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <CopyLocal>True</CopyLocal>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="office">
+      <HintPath>PIA\Office.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <CopyLocal>True</CopyLocal>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+</Project>
